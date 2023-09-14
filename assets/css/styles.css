@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+:root {
+    --primary-color: rgba(13, 66, 108);
+    --secondary-color:rgba(25, 105, 179);
+    --white-color: rgba(255, 255, 255);
+    --footer-color: rgb(37, 151, 185);
+}
+
+
+header{
+    height: 58px;
+    padding: 10px;
+    background-image: linear-gradient(to top, var(--primary-color),var(--secondary-color));
+    color: var(--white-color);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+legend {
+    color: white;
+    text-align: center;
+}
+
+form{
+    color: var(--white-color);
+    padding: 10px;
+    margin: auto;
+    
+}
+
+fieldset {
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+    
+}
+
+div.form-group {
+    padding: 10px;
+   text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 150px;
+    padding: 5px;
+    
+}
+
+label {
+	display: block;
+	float: left;
+
+}
+
+label, input {
+	width:150px;
+	margin: 3px 0;
+}
+
+input {
+    padding: 5px;
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;   
+    
+}
+
+button {
+    padding: 5px;
+    width: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    borde: none;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--primary-color),var(--footer-color));
+   color: var(--white-color);
+   padding: 10px;
+   text-align: center;
+   font-size: 1em;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+   
+   bottom:0;
+   width: 100%;
+   text-shadow: 2px 2px 4px black;
+   
+}
+
+
+@media only screen and (max-width:450px){
+
+
+    header{
+        height: 40px;
+        padding: 10px;
+        color: var(--white-color);
+        display: block;
+
+    }
+
+
+    
+    h1 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        height: 150px;
+    }
+
+    input {
+        width: 250px;
+        text-align: center;
+        border: none;
+    }
+
+
+    
+
+   
+    
+}
